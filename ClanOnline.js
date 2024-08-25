@@ -395,7 +395,9 @@ function getOnlineMember(){
             pl.innerHTML = `${memberOnline[u].b}${p}`;
             c.appendChild(pl);
           }
-          sendDiscordMessage(`Checkerka ${cd}`,memberOnline)
+          if(memberOnline.length >= vh[2]){
+            sendDiscordMessage(`Checkerka ${cd}`,memberOnline);
+          }
           pOD.innerHTML = `(${memberOnline.length})`;
           pOD.style.color = 'green';
         }else{
