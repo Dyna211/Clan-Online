@@ -65,7 +65,6 @@ position: fixed;
     .text-checkerka-uper{
     font-size: 14px;
     color: white;
-    text-align: center;
     width: 100%;
     height: 32%;
     }
@@ -143,6 +142,7 @@ position: fixed;
     display: inline-block;
     margin-left: 5px;
     top: 1px;
+    font-weight: bold;
     }
   
 
