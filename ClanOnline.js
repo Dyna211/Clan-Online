@@ -21,11 +21,13 @@ let vh = [minLvl = 1,maxLvl = 500,valuePlayersMessage = 7,refreshPlayer = 30,cla
 var iGOM = vh[3]*1000;
 const data = {
     menuPosition:menuPosition,
+    showMenu:showMenu,
     vh:vh,
 }
 
 function updateStorage(){
     data.menuPosition = menuPosition;
+    data.showMenu = showMenu;
     data.vh = vh;
     GM_setValue('Checkerka',data);
 }
@@ -35,6 +37,7 @@ function getStorage(){
     if(!get) updateStorage();
     else{
         menuPosition = get.menuPosition;
+        showMenu = get.showMenu;
         vh = get.vh;
     }
 }
@@ -251,6 +254,17 @@ globalBox.addEventListener('mouseup',()=>{
         updateStorage();
     }
 });
+globalBox.addEventListener('contextmenu',(e)=>{
+    e.preventDefault();
+    if(showMenu == true){
+        CPO.style.display = 'none';
+    }else if(showMenu == false) CPO.style.display = 'block';
+    showMenu = !showMenu;
+    updateStorage();
+})
+if(!showMenu){
+    CPO.style.display = 'none';
+}else CPO.style.display = 'block';
 //
 
 //Request
