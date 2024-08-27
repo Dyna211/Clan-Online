@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name      Clan Online
+// @name      xd
 // @version   1.0
 // @author    Dyna
 // @description  try to take over the world!
@@ -365,7 +365,7 @@ function getOnlineMember(){
         const profession = {
           'Paladyn': 'p',
           'Wojownik': 'w',
-          'Tancerz ostrzy': 't',
+          'Tancerz ostrzy': 'b',
           'Mag': 'm',
           'Tropiciel': 't',
           'Łowca': 'h',
