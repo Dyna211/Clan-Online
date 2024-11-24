@@ -128,23 +128,13 @@ function global() {
     display: inline-block;
     margin-bottom: 10px;
 }
-    .d-checkerka{
-    margin-bottom: 5px;
-    border: 1px solid #7a7a7d;
-    font-size: 13px;
-    height: 22px;
-    margin-left: 2px;
-    padding: 2px;
-    border-radius: 5px;
-    text-overflow: ellipsis;
+    .containerNickPlayerGetOnlinePlayer{
+margin-bottom: 6px;
+    border: 1px solid #343434;
+    display: flex;
+    justify-content: space-between;
     }
-    .d-prof{
-        float: right;
-    vertical-align: middle;
-    display: inline-block;
-    margin-right: 3px;
-        line-height: 1.4;
-    }
+
     .online-number-che{
         color: green;
     font-weight: bold;
@@ -414,25 +404,18 @@ function global() {
             const p = profession[memberOnline[u].n];
 
             const c = document.createElement("div");
-            c.classList.add("d-checkerka");
+            c.classList.add("containerNickPlayerGetOnlinePlayer");
             if (u == 0) c.style.marginTop = "5px";
             CPO.appendChild(c);
 
-            const d = document.createElement("div");
+            const d = document.createElement("span");
             d.innerHTML = `${u + 1}.${memberOnline[u].v} `;
-            d.style.verticalAlign = "middle";
-            d.style.display = "inline-block";
-            d.style.width = '100px';
-            d.style.whiteSpace = 'nowrap';
-            d.style.overflow = 'hidden';
-            d.style.textOverflow = 'ellipsis';
-            d.style.lineHeight = '1.4'
 
             c.appendChild(d);
 
-            const pl = document.createElement("div");
-            pl.classList.add("d-prof");
+            const pl = document.createElement("span");
             pl.innerHTML = `${memberOnline[u].b}${p}`;
+            pl.style.marginLeft = '5px';
             c.appendChild(pl);
           }
           if (memberOnline.length >= vh[2]) {
@@ -448,6 +431,7 @@ function global() {
       },
     });
   }
-  setInterval(getOnlineMember, iGOM);
+  setTimeout(getOnlineMember,3000);
+  
 }
 global();
