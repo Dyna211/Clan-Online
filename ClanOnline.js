@@ -129,10 +129,13 @@ function global() {
     margin-bottom: 10px;
 }
     .containerNickPlayerGetOnlinePlayer{
-margin-bottom: 6px;
+    margin-bottom: 6px;
     border: 1px solid #343434;
     display: flex;
     justify-content: space-between;
+    align-items: center; /* Ustawienie wyrównania elementów w pionie */
+    padding: 10px; /* Opcjonalne odstępy wewnętrzne */
+    box-sizing: border-box; /* Uwzględnienie paddingu w wymiarach */
     }
 
     .online-number-che{
