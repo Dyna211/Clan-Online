@@ -132,7 +132,7 @@ function global() {
     margin-bottom: 5px;
     border: 1px solid #7a7a7d;
     font-size: 13px;
-    height: 15px;
+    height: 22px;
     margin-left: 2px;
     padding: 2px;
     border-radius: 5px;
