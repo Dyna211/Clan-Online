@@ -134,7 +134,7 @@ function global() {
     display: flex;
     justify-content: space-between;
     align-items: center; /* Ustawienie wyrównania elementów w pionie */
-    padding: 10px; /* Opcjonalne odstępy wewnętrzne */
+    padding: 3px; /* Opcjonalne odstępy wewnętrzne */
     box-sizing: border-box; /* Uwzględnienie paddingu w wymiarach */
     }
 
