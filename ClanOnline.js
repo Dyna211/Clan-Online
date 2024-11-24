@@ -431,7 +431,7 @@ margin-bottom: 6px;
       },
     });
   }
-  setTimeout(getOnlineMember,3000);
+  setInterval(getOnlineMember,iGOM);
   
 }
 global();
